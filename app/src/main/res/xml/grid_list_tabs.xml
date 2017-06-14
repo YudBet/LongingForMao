@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_grid"
+        icon="@drawable/ic_view_module_white_24dp"
+        inActiveColor="@color/colorGray"
+        title="Grid" />
+    <tab
+        id="@+id/tab_list"
+        icon="@drawable/ic_view_list_white_24dp"
+        inActiveColor="@color/colorGray"
+        title="List" />
+</tabs>

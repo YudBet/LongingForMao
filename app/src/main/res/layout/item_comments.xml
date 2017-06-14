@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/responser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:paddingBottom="2dp"
+        android:textColor="#000"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/responser"
+        android:textColor="#000"
+        android:padding="4dp"
+        android:paddingTop="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="12sp" />
+</RelativeLayout>

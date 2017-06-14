@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/pet_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img"
+        android:layout_alignParentTop="true"
+        android:padding="4dp"
+        android:paddingBottom="2dp"
+        android:textColor="#000"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/new_post_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img"
+        android:layout_below="@id/pet_info"
+        android:textColor="@color/normal_text"
+        android:padding="4dp"
+        android:paddingTop="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/new_feed_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img"
+        android:layout_below="@id/new_post_info"
+        android:textColor="@color/normal_text"
+        android:padding="4dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/to_pet"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="25dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_arrow_forward_black_24dp"
+        android:backgroundTint="@color/colorPrimaryDark" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider" />
+
+</RelativeLayout>

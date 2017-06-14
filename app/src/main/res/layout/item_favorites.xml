@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/pet_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img"
+        android:layout_alignParentTop="true"
+        android:padding="4dp"
+        android:paddingBottom="2dp"
+        android:textColor="#000"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/phy_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img"
+        android:layout_below="@id/pet_info"
+        android:textColor="@color/normal_text"
+        android:padding="4dp"
+        android:paddingTop="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/img_person"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:padding="4dp"
+        android:layout_toRightOf="@id/img"
+        android:layout_below="@id/phy_info"
+        android:src="@drawable/ic_person_white_24dp"
+        android:tint="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/follower_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_person"
+        android:layout_below="@id/phy_info"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="4dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/img_posts"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/follower_count"
+        android:layout_below="@id/phy_info"
+        android:padding="4dp"
+        android:src="@drawable/ic_photo_white_24dp"
+        android:tint="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/posts_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_posts"
+        android:layout_below="@id/phy_info"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="4dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/to_pet"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="25dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_arrow_forward_black_24dp"
+        android:backgroundTint="@color/colorPrimaryDark" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider" />
+
+</RelativeLayout>
